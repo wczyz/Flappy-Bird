@@ -20,7 +20,6 @@ class Player:
     def update(self):
         """Function that moves the player with respect to the velocity and updates velocity."""
 
-        self.window.setBackground("white")
         self.body.move(0, self.velocity)
         self.y += self.velocity
         self.velocity += GRAVITY
